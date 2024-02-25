@@ -6,6 +6,7 @@ import Calificacion from "@/components/Funcionality/Calificacion/Calificacion";
 import TextoImagen from "@/components/Main/TextoImagen/TextoImagen";
 import Slider from "@/components/Main/Slider/Slider";
 import PricingCard from "@/components/Main/PricingCard/PricingCard";
+import ImageComponent from "@/components/Main/ImageComponent/ImageComponent";
 //import styles from '../components/Main/TextoImagen/TextoImagen.module.scss'
 
 export default function Home() {
@@ -13,20 +14,17 @@ export default function Home() {
     {
       imageUrl: "/images/Cover1.jpg",
       title: "",
-      description:
-        "",
+      description: "",
     },
     {
       imageUrl: "/images/Cover2.jpg",
       title: "",
-      description:
-        "",
+      description: "",
     },
     {
       imageUrl: "/images/TitlePL.png",
       title: "",
-      description:
-        "",
+      description: "",
     },
   ];
 
@@ -62,6 +60,30 @@ export default function Home() {
           imageUrl="/images/certificado-mascota-sana.jpg"
           //className={`${styles.textoImagenComponent}`}
         />
+        <Row className={styles.calificacionRow}>
+          <Col>
+            <ImageComponent
+              src="/images/certificado-mascota-sana.jpg"
+              alt="Descripción de la imagen"
+              width={500} // Estos valores son utilizados por `Image` para optimizar el espacio reservado antes de cargar la imagen
+              height={300}
+              colProps={{ xs: 12, md: 6, lg: 4 }} // Ocupa toda la fila en móviles, la mitad en tablets y un tercio en pantallas grandes
+            />
+            <Calificacion />
+
+          </Col>
+          <Col>
+          <ImageComponent
+              src="/images/certificado-mascota-sana.jpg"
+              alt="Descripción de la imagen"
+              width={500} // Estos valores son utilizados por `Image` para optimizar el espacio reservado antes de cargar la imagen
+              height={300}
+              colProps={{ xs: 12, md: 6, lg: 4 }} // Ocupa toda la fila en móviles, la mitad en tablets y un tercio en pantallas grandes
+            />
+            <Calificacion />
+          </Col>
+        </Row>
+
         <section id="Pricing" className={styles.pricingSection}>
           <h2 className={styles.pricingTitle}>Precios</h2>
           <Row className={styles.pricingCards}>
@@ -102,9 +124,7 @@ export default function Home() {
               />
             </Col>
           </Row>
-          
         </section>
-        
       </main>
     </>
   );
