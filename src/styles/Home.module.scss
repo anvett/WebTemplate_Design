@@ -1,0 +1,69 @@
+@import '../styles/variables';
+
+.main{
+  background-color: $accent-color;
+ 
+  .title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $primary-color;
+    font-size: 3rem;
+    padding: 3rem;
+  }
+
+  .subtitle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:$accent-color;
+    font-size: 1.5rem;
+  }
+}
+
+// Clases personalizadas de estilos como props
+// Componente TextoImagen
+.textoImagenComponent1 {
+  background-color: $secondary-color;
+  h2 {
+    color: $primary-color;
+  }
+  p{
+    color: $dark-color;
+  }
+}
+
+//-----------------------------------
+// Pricing
+//-----------------------------------
+
+.pricingSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;  
+  width: 100%;
+  height: auto;
+  background-color: $secondary-color;
+  margin-top: $spacing-4;
+}
+
+.pricingTitle {
+  text-align: center;  
+  font-size: 2.5rem;
+  font-weight: 900;
+  padding-bottom: $spacing-5;
+  color: $primary-color;
+  padding-top: $spacing-5;
+}
+
+.pricingCards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: $spacing-5;
+}
+
+
+

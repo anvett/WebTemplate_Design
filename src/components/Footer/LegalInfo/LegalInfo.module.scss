@@ -1,0 +1,26 @@
+@import "../../../styles/variables";
+
+.legalContainer {
+  padding: $spacing-4 0;
+}
+
+.legalContent {
+  text-align: center;
+}
+
+.copyRight {
+  font-size: 0.8rem;
+  margin-bottom: $spacing-2;
+}
+
+.legalLinks {
+  font-size: 0.8rem;
+
+  .legalLink {
+    color: $dark-color;
+    &:hover {
+      color: darken($primary-color, 10%);
+      transition: $transition-slow;
+    }
+  }
+}

@@ -1,0 +1,42 @@
+@import "../../../styles/variables.scss";
+
+.pricingCard {
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 1rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+  margin: 1rem 0; // Agrega un margen para separar las tarjetas de precios si están en una grilla o lista
+  text-align: center;
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  }
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: $primary-color;
+  font-size: 1.5rem;
+  padding: 2rem;
+  background-color: $accent-color;
+  border-radius: 1rem;
+}
+
+.price {
+  font-size: 2rem;
+  font-weight: bold;
+  color: $primary-color;
+  margin: 1rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.pricingButton {
+  margin-top: 1rem;
+  background-color: $primary-color;
+  color: $accent-color;
+}
